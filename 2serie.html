@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2 serie</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="icon" href="inova.png" type="image/x-icon">
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+
+  <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+  <style>
+   .font {
+      font-family: "Oswald", sans-serif;
+    }
+
+    body {
+      background-color: brown;
+
+      margin-top: 100px;
+    }
+
+    .h1 {
+      margin-left: 20px;
+      color: rgb(0, 0, 0);
+    }
+
+    .topo {
+      margin-top: 10px;
+    }
+
+    .toopo {
+      margin-top: 17px;
+    }
+
+    nav.link {
+      color: black;
+       transition: color 0.5s ease;
+    }
+
+    .nav-link:hover {
+      color: #d5d5d5;
+      background-color: transparent;
+      text-decoration: none;
+    }
+ 
+
+ 
+  footer i:hover {
+      text-shadow: 0px 0px 8px #ffffff;
+    transition: transform 0.4s ease;
+  }
+
+
+    .nav-link.active {
+      background-color: #514f4f;
+      color: #212529;
+      border-radius: 10px;
+    }
+
+    .nav-link.active:hover {
+      background-color: #d5d5d5;
+    }
+
+    .nav-tabs {
+      border-bottom: none;
+
+    }
+
+    .distancia {
+      margin-top: 100px;
+      margin-left: 10px;
+
+    }
+
+
+
+
+
+
+    .carddireito {
+      margin-left: 43.3%;
+      margin-top: 1.4%;
+      height: 0.1px;
+      width: 56%;
+
+
+
+    }
+
+    button {
+      margin-left: 10px;
+    }
+
+    footer {
+      background-color: black;
+      height: auto;
+      width: 100%;
+
+    }
+
+    .roda {
+      align-items: center;
+    }
+
+    .card-scroll {
+      height: 490px;
+      overflow-y: auto;
+    }
+  </style>
+</head>
+
+<body>
+  <script src="js/jquery-1.12.4.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+
+
+  <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+
+
+
+      <div class="d-flex align-items-center font ">
+        <a href="#" class="navbar-brand">
+          <img src="inova.png" width="100px">
+        </a>
+        <h1 class="mb-0 ms-3 me-5 h1">Curso Desenvolvimento de Sistemas</h1>
+      </div>
+      <button class="navbar-toggler ms-auto " type="button" data-bs-toggle="collapse" data-bs-target="#topo">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse  font" id="topo">
+        <ul class="navbar-nav flex-row nav-tabs active">
+          <li class="nav-item me-3">
+            <a href="index.html" class="nav-link">
+              <h3 class="topo"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
+                  class="bi bi-house" viewBox="0 0 16 16">
+                  <path
+                    d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5z" />
+                </svg></h3>
+            </a>
+          </li>
+          <li class="nav-item me-3">
+            <a href="1serie.html" class="nav-link">
+              <h3 class="toopo">1 serie</h3>
+            </a>
+          </li>
+          <li class="nav-item me-3">
+            <a href="2serie.html" class="nav-link active shadow-lg" data-bs-toggle="tab">
+              <h3 class="toopo">2 serie</h3>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="3serie.html" class="nav-link">
+              <h3 class="toopo">3 serie</h3>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    </div>
+  </nav>
+
+  <header>
+    <div class="distancia">
+
+      <div class="container-fluid">
+        <div class="carddireito">
+
+
+          <div class="row">
+            <div class="accordion" id="courseAccordion">
+              <!--descriçao aps -->
+              <div class="collapse" data-bs-parent="#courseAccordion" id="aps">
+                <div class="col-12">
+
+                  <div class="card">
+                    <div class="card-header bg-primary text-white">
+                      <h1> 2º ano: Aps – Analise e Projetos de sistemas</h1>
+                    </div>
+                    <div class="card-body card-scroll">
+
+
+                      <p>
+                      <h4 class="text-primary"> Resumo: </h4>
+
+                      <p>No 2º ano do curso de Análise e Desenvolvimento de Sistemas (ADS), também conhecido como
+                        Análise e Projetos de Sistemas, o foco começa a se aprofundar em desenvolvimento de software,
+                        banco de dados, engenharia de software e outras áreas mais técnicas.:
+                      <h4 class="text-primary"> Matérias do 2º ano de APS</h4>
+
+                      <h6>• 1. Estrutura de Dados
+
+                        Listas, filas, pilhas, árvores, grafos.
+
+                        Algoritmos para busca e ordenação.
+
+                        Eficiência de algoritmos (complexidade)..</h6>
+                      <br>
+                      <h6>•2. Engenharia de Software
+
+                        Modelagem e documentação de sistemas.
+
+                        Ciclo de vida de software (ágil, cascata).
+
+                        Requisitos, testes, manutenção. .</h6>
+                      <br>
+                      <h6>•3. Programação Orientada a Objetos (POO)
+
+                        Conceitos como herança, polimorfismo, encapsulamento.
+
+                        Aplicações práticas em linguagens como Java, C# ou Python. .</h6>
+                      <br>
+                      <h6>• 4. Banco de Dados II
+
+                        Stored procedures, triggers, views.
+
+                        Normalização mais avançada.
+
+                        Administração e segurança de dados..</h6>
+                      <br>
+                      <h6>• 5. Desenvolvimento Web (Front-end e/ou Back-end)
+
+                        HTML, CSS, JavaScript.
+
+                        Frameworks como React, Angular, Node.js, PHP, etc.
+
+                        APIs RESTful.</h6>
+                      <br>
+                      <h6>6. Análise e Projeto de Sistemas II
+
+                        Modelagem UML mais avançada (casos de uso, diagramas de sequência, classes).
+
+                        Levantamento e análise de requisitos.
+
+                        Projetos em grupo (muitas vezes simulando cliente real).</h6>
+                      <br>
+                      <h6>7. Segurança da Informação (em algumas grades)
+
+                        Conceitos de criptografia, autenticação.
+
+                        Políticas de segurança e boas práticas.
+                      </h6>
+                      <br>
+                      <h6>8. Projeto Integrador / APS (Atividades Práticas Supervisionadas)
+
+                        Desenvolvimento de um sistema completo em grupo.
+
+                        Aplicação prática de tudo o que foi aprendido.
+
+                        Apresentações e relatórios.
+                      </h6>
+                      <br>
+                      <h4 class="text-warning">Dicas para se dar bem no 2º ano:</h4>
+
+                      Comece a estudar Git/GitHub: será essencial para trabalho em equipe.
+
+                      Pratique programação fora das aulas (em sites como HackerRank, LeetCode, etc.).
+
+                      Use ferramentas de modelagem como StarUML ou Draw.io.
+
+                      Aprenda a usar um banco de dados de verdade, como PostgreSQL, MySQL ou SQL Server.
+
+                      Se quiser, posso te ajudar a montar um plano de estudos baseado na sua grade específica. Você
+                      estuda em qual instituição? Posso procurar a grade curricular exata se me disser o nome e campus..
+                      </h6>
+
+                      <br>
+                      <br>
+                      Projetos típicos da disciplina:
+                      <br>
+                      Desenvolvimento de protótipos de sistemas.
+                      <br>
+                      Soluções para problemas técnicos específicos.
+                      <br>
+                      Estudos de caso aplicados a cenários reais.
+                      <br>
+                      Apresentações e relatórios técnicos detalhados.
+                      </p>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+
+
+              <!-- descriçao pw -->
+              <div class="collapse" data-bs-parent="#courseAccordion" id="myCollapsibleContent">
+                <div class="col-12">
+
+                  <div class="card">
+                    <div class="card-header bg-primary text-white">
+                      <h1> 2º ano: PW – Programação Web</h1>
+                    </div>
+                    <div class="card-body card-scroll ">
+
+                      <p>
+                      <h4 class="text-primary">Resumo:</h4>
+                      <p> A disciplina de PW (Programação Web) tem como objetivo introduzir os alunos ao desenvolvimento
+                        de
+                        sites e aplicações para a web, desde o front-end (parte visual) até conceitos básicos de
+                        back-end.</p>
+
+
+                      <h6>• HTML: linguagem de marcação usada para estruturar o conteúdo da web (textos, formulários,
+                        etc.)</h6>
+                      <h6>• CSS: linguagem de estilo usada para deixar os sites bonitos e responsivos (cores, fontes.).
+                      </h6>
+                      <br>
+                      <h6>• 1. Front-End Intermediário/Avançado
+
+                        HTML5 e CSS3 (reforço e boas práticas).
+
+                        JavaScript (JS): manipulação de DOM, eventos, validação de formulários.
+
+                        Uso de bibliotecas/frameworks:
+
+                        jQuery (em alguns cursos mais tradicionais).
+
+                        Frameworks modernos (React, Vue ou Angular – depende da instituição).
+
+
+
+
+
+
+                      </h6>
+                      <br>
+                      <h6>•
+                        2. Back-End com Linguagem Web
+
+                        PHP, Node.js, Python (Django/Flask) ou Java (Spring) – depende da faculdade.
+
+                        Lógica de negócio no servidor.
+
+                        Integração com banco de dados (MySQL, PostgreSQL, etc.).
+
+                        Upload de arquivos, sessões, cookies. .</h6>
+                      <br>
+                      <h6> 3. Banco de Dados em Aplicações Web
+
+                        CRUD (Create, Read, Update, Delete).
+
+                        Conexão entre front-end e banco via scripts back-end.
+
+                        Segurança nas queries (uso de SQL preparado / PDO, por exemplo).</h6>
+                      <br>
+                      <h6> 4. Criação e Consumo de APIs (REST)
+
+                        O que é uma API.
+
+                        Como criar uma API simples.
+
+                        Como consumir uma API usando JavaScript (fetch, axios).
+
+                        JSON como formato de dados.</h6>
+                      <br>
+                      <h6> 5. Projeto Final / Sistema Web Completo
+
+                        Um sistema web funcional com:
+
+                        Front-end interativo.
+
+                        Back-end com regras de negócio.
+
+                        Banco de dados.
+
+                        Exemplo: sistema de cadastro, login de usuários, gerenciamento de produtos etc. </h6>
+                      <p>pw</p>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <div class="collapse" data-bs-parent="#courseAccordion" id="Dd">
+                <div class="col-12">
+
+                  <div class="card">
+                    <div class="card-header bg-primary text-white">
+                      <h2>2º ano: DD-Design Digital</h2>
+                    </div>
+                    <div class="card-body card-scroll">
+
+                      <p>
+                      <h4 class="text-primary">Resumo:</h4>
+
+                      <h6>• 1. Fundamentos do Design
+
+                        Princípios do design: alinhamento, contraste, repetição, proximidade.
+
+                        Cores: teoria das cores, combinações, acessibilidade.
+
+                        Tipografia: escolha de fontes, legibilidade, hierarquia visual.
+
+                        Layout e grid: organização de elementos na tela.</h6>
+                      <br>
+                      <h6>• 2. UI/UX (Interface e Experiência do Usuário)
+
+                        Diferença entre UI (User Interface) e UX (User Experience).
+
+                        Navegação intuitiva e usabilidade.
+
+                        Personas e jornada do usuário.
+
+                        Design centrado no usuário..</h6>
+                      <br>
+
+                      <h6>• 3. Ferramentas de Design
+
+                        Ferramentas comuns:
+
+                        Figma (mais usado atualmente, gratuito e online).
+
+                        Adobe XD (em algumas instituições).
+
+                        Canva ou Sketch (menos comum em ADS, mas pode aparecer).
+
+                        Prototipagem de telas: wireframes, mockups e protótipos interativos.</h6>
+                      <br>
+
+                      <h6>•1. Fundamentos do Design Visual
+
+                        Princípios de design: alinhamento, contraste, repetição, proximidade.
+
+                        Teoria das cores: psicologia das cores, combinações, paletas.
+
+                        Tipografia: tipos de fontes, hierarquia visual, legibilidade.
+
+                        •Layouts e grids: organização visual da interface. .</h6>
+                      <br>
+                      <h6>5. Ferramentas mais usadas
+                        <br>
+                        •Figma (principal ferramenta atual, gratuita e online).
+                        <br>
+                        •Adobe XD (menos usado, mas ainda presente em algumas faculdades).
+                        <br>
+                        •Canva (para identidade visual, em alguns casos).
+                        <br>
+                        •Icons8, Google Fonts, Coolors (suporte visual).
+                      </h6>
+                      <br>
+                      <h4 class="text-warning">Objetivo geral:</h4>
+                      <p>Desenvolver a capacidade de criar interfaces bem estruturadas, que proporcionem uma boa
+                        experiência ao usuário e valorizem os sistemas desenvolvidos.</p>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+
+
+              <div class="collapse" data-bs-parent="#courseAccordion" id="bd">
+                <div class="col-12">
+
+                  <div class="card">
+                    <div class="card-header bg-primary text-white">
+                      <h2>2º ano: Bd-Banco de dados</h2>
+                    </div>
+                    <div class="card-body card-scroll">
+
+                      <h4 class="text-primary">Resumo:</h4>
+                      <p>Essa disciplina ensina como projetar, implementar e gerenciar bancos de dados relacionais.
+                        Durante as aulas, os alunos aprendem:</p>
+                      <h6>• 1. SQL Avançado
+
+                        Subconsultas (subqueries).
+
+                        JOINs complexos (INNER, LEFT, RIGHT, FULL).
+
+                        Funções agregadas (SUM, AVG, COUNT, etc.).
+
+                        Agrupamentos com GROUP BY e filtros com HAVING.</h6>
+                      <br>
+                      <h6>•1. SQL Avançado
+
+                        Subconsultas (subqueries).
+
+                        JOINs complexos (INNER, LEFT, RIGHT, FULL).
+
+                        Funções agregadas (SUM, AVG, COUNT, etc.).
+
+                        Agrupamentos com GROUP BY e filtros com HAVING.</h6>
+                      <br>
+                      <h6>• 3. Triggers (Gatilhos)
+
+                        Automatizar ações no banco após INSERT, UPDATE, DELETE.
+
+                        Exemplo: atualizar um log toda vez que um registro é alterado..</h6>
+                      <br>
+                      <h6>• 4 Views (Visões)
+
+                        Criação de visões com CREATE VIEW.
+
+                        Simplificar consultas complexas.
+
+                        Segurança: restringir colunas visíveis a certos usuários..</h6>
+                      <br>
+                      <h6>• 5. Normalização (Revisão e Aplicação Prática)
+
+                        Formas normais (1FN até 3FN).
+
+                        Eliminar redundância e garantir integridade..</h6>
+                      <br>
+                      <h6>• 6. Transações e Controle de Concorrência
+
+                        BEGIN, COMMIT, ROLLBACK.
+
+                        Propriedades ACID:
+
+                        Atomicidade
+
+                        Consistência
+
+                        Isolamento
+
+                        Durabilidade
+
+                        Controle de acesso simultâneo ao banco (lock, deadlock).</h6>
+                      <br>
+                      <h6>7. Administração e Segurança
+
+                        Criação de usuários e permissões (GRANT, REVOKE).
+
+                        Backups e restore.
+
+                        Monitoramento de desempenho (índices, EXPLAIN, etc.).</h6>
+                      <br>
+                      <h4 class="text-warning">Objetivo geral:</h4>
+                      <p>Habilitar o aluno a desenvolver sistemas que utilizam bancos de dados para armazenar
+                        informações de forma estruturada, segura e eficiente.</p>
+
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+
+
+
+              <div class="collapse" data-bs-parent="#courseAccordion" id="fd">
+                <div class="col-12">
+
+                  <div class="card">
+                    <div class="card-header bg-primary text-white">
+                      <h2>2º ano: Fd-Fundamentos da informatica</h2>
+                    </div>
+                    <div class="card-body card-scroll">
+
+                      <p>
+                      <h4 class="text-primary">Resumo:</h4>
+                      <p>Objetivo: fornecer a base essencial sobre como os computadores funcionam, seus componentes,
+                        sistemas operacionais e lógica básica de funcionamento da tecnologia.:</p>
+
+
+                      <h6>•1. Conceitos Básicos de Informática
+
+                        O que é hardware e software.
+
+                        Tipos de computadores e sistemas embarcados.
+
+                        Entradas, saídas e dispositivos de armazenamento.</h6>
+                      <br>
+                      <h6>•2. Arquitetura de Computadores
+
+                        CPU (Unidade Central de Processamento).
+
+                        Memória RAM e ROM.
+
+                        HD, SSD, placas-mãe e periféricos.
+
+                        Barramentos e componentes internos. </h6>
+                      <h6> •3. Sistemas Operacionais
+                        Funções básicas de um SO.
+                        Windows, Linux e outros exemplos.
+                        Gerenciamento de processos, arquivos e usuários.</h6>
+                      <br>
+                      <h6> • 4. Redes de Computadores (noções básicas)
+
+                        O que é uma rede e como ela funciona.
+
+                        Tipos de redes (LAN, WAN, MAN).
+
+                        Internet, IP, DNS, protocolos (TCP/IP).</h6>
+                      <h6> • 5. Pacote Office / Ferramentas Digitais
+
+                        Word, Excel, PowerPoint (uso básico).
+
+                        Google Drive e ferramentas na nuvem.
+
+                        Softwares de produtividade.</h6>
+                      <h6> • 6. Segurança da Informação (noções básicas)
+
+                        Vírus, malwares, phishing.
+
+                        Antivírus e boas práticas de segurança.
+
+                        Senhas seguras, backups.</h6>
+                      <h6> • 7. História da Computação
+
+                        Evolução dos computadores.
+
+                        Principais inventores e marcos históricos.
+
+                        Importância da informática na sociedade.</h6>
+                      <p> Noções básicas de responsividade, design visual, estruturas de navegação, e boas práticas no
+                        desenvolvimento web.
+                      <h4 class="text-warning">Objetivo geral:</h4>
+                      <p>Capacitar o aluno a desenvolver soluções computacionais básicas e intermediárias, utilizando
+                        lógica estruturada e boas práticas de programação.</p>
+                      </p>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+
+
+
+
+              <div class="collapse" data-bs-parent="#courseAccordion" id="tpa">
+                <div class="col-12">
+
+                  <div class="card">
+                    <div class="card-header bg-primary text-white">
+                      <h2>2º ano: Tpa-Técnicas de Programação e Algoritmos</h2>
+                    </div>
+                    <div class="card-body card-scroll">
+
+                      <p>
+                      <h4 class="text-primary">Resumo:</h4>
+                      <p>aprofundar a lógica de programação, trabalhar com estruturas de dados simples, modularização, e
+                        começar a resolver problemas mais complexos com algoritmos otimizados.</p>
+
+
+                      <h6>• 1. Revisão Rápida (nível avançado)
+
+                        Sintaxe da linguagem (Python, C, Java, depende da instituição).
+
+                        Estruturas condicionais e de repetição.
+
+                        Funções com retorno, passagem por referência e valor.</h6>
+                      <br>
+                      <h6>•2. Vetores e Matrizes Avançadas
+
+                        Manipulação complexa (ordenação, filtros, buscas).
+
+                        Algoritmos de ordenação: Bubble Sort, Selection Sort, Insertion Sort.
+
+                        Busca linear e binária. </h6>
+                      <br>
+                      <h6> •3. Strings e Manipulação de Texto
+
+                        Leitura e análise de textos.
+
+                        Contagem de vogais, palavras, ou formatação de strings.
+
+                        Conversão de dados (string → número e vice-versa).</h6>
+                      <h6> •4. Subprogramas (Funções e Procedimentos)
+
+                        Modularização do código.
+
+                        Uso de múltiplas funções para dividir problemas.
+
+                        Organização por arquivos (em linguagens como C e Python).</h6>
+                      <br>
+                      <h6> • 5. Recursividade (caso apareça na grade)
+
+                        Funções que chamam a si mesmas.
+
+                        Fatorial, Fibonacci, Torres de Hanoi.
+
+                        Comparação entre recursão e laços.</h6>
+                      <h6> •6. Algoritmos de Lógica Complexa
+
+                        Verificação de CPF ou CNPJ (exercícios reais).
+
+                        Algoritmos de criptografia simples (ex: Cifra de César).
+
+                        Problemas de programação competitiva (nível iniciante). </h6>
+
+                      <br>
+                      <br>
+                      <h4 class="text-warning">Objetivo geral:</h4>
+                      <p>Capacitar o aluno a desenvolver soluções computacionais básicas e intermediárias, utilizando
+                        lógica estruturada e boas práticas de programação.</p>
+                      </p>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+
+      </div>
+
+
+
+      <!-- cards -->
+
+
+      <div class="font">
+        <div class="col-sm-5 mb-2">
+          <div class="card">
+            <button class="btn text-start" type="button" data-bs-toggle="collapse"
+              data-bs-target="#myCollapsibleContent" aria-expanded="false" aria-controls="myCollapsibleContent">
+              <div class="card-border">
+                <div class="card-body">
+                  <div class="cartãoO " estilo="largura¡:: 18rém¡;O ">
+                    <ul class="list-group lista-grupo-flushO">
+                      <li class="lista-grupo-itemO">PW-1A-N-MTEC </li>
+                      <li class="lista-grupo-itemO"> Desenvolvimento de sistemas (MTEC-N)-158-20250 </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+        </button>
+
+
+        <div class="col-sm-5 mb-2">
+
+          <div class="card">
+            <button class="btn text-start" type="button" data-bs-toggle="collapse" data-bs-target="#aps"
+              aria-expanded="false" aria-controls="myCollapsibleContent">
+              <div class="card-border">
+                <div class="card-body">
+                  <div class="cartãoO " estilo="largura¡:: 18rém¡;O ">
+                    <ul class="list-group lista-grupo-flushO">
+                      <li class="lista-grupo-itemO">APS-1A-N-MTEC</li>
+                      <li class="lista-grupo-itemO"> Desenvolvimento de sistemas (MTEC-N)-158-20250 </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+          </div>
+
+        </div>
+        </button>
+
+
+
+
+
+
+
+
+        <div class="col-sm-5 mb-2">
+
+          <div class="card">
+            <button class="btn text-start" type="button" data-bs-toggle="collapse" data-bs-target="#tpa"
+              aria-expanded="false" aria-controls="myCollapsibleContent">
+              <div class="card-border">
+                <div class="card-body">
+                  <div class="cartãoO " estilo="largura¡:: 18rém¡;O ">
+                    <ul class="list-group lista-grupo-flushO">
+                      <li class="lista-grupo-itemO">TPA-N-MTEC</li>
+                      <li class="lista-grupo-itemO"> Desenvolvimento de sistemas (MTEC-N)-158-20250 </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+          </div>
+
+        </div>
+        </button>
+
+
+
+        <div class="col-sm-5 mb-2">
+          <div class="card">
+            <button class="btn text-start" type="button" data-bs-toggle="collapse" data-bs-target="#Dd"
+              aria-expanded="false" aria-controls="myCollapsibleContent">
+              <div class="card-border">
+                <div class="card-body">
+                  <div class="cartãoO " estilo="largura¡:: 18rém¡;O ">
+                    <ul class="list-group start lista-grupo-flushO">
+                      <li class="lista-grupo-itemO">DD-1A-N-MTEC</li>
+                      <li class="lista-grupo-itemO"> Desenvolvimento de sistemas (MTEC-N)-158-20250 </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+
+
+        <div class="col-sm-5 mb-2">
+          <div class="card">
+            <button class="btn text-start" type="button" data-bs-toggle="collapse" data-bs-target="#bd"
+              aria-expanded="false" aria-controls="myCollapsibleContent">
+              <div class="card-border">
+                <div class="card-body">
+
+                  <div class="cartãoO " estilo="largura¡:: 18rém¡;O ">
+                    <ul class="list-group lista-grupo-flushO">
+                      <li class="lista-grupo-itemO">BD-1A-N-MTEC</li>
+                      <li class="lista-grupo-itemO"> Desenvolvimento de sistemas (MTEC-N)-158-20250 </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+
+
+        <div class="col-sm-5 mb-2">
+          <div class="card">
+            <button class="btn text-start" type="button" data-bs-toggle="collapse" data-bs-target="#fd"
+              aria-expanded="false" aria-controls="myCollapsibleContent">
+              <div class="card-border">
+                <div class="card-body">
+                  <div class="cartãoO " estilo="largura¡:: 18rém¡;O ">
+                    <ul class="list-group lista-grupo-flush">
+                      <li class="lista-grupo-itemO">FD-1A-N-MTEC</li>
+                      <li class="lista-grupo-itemO"> Desenvolvimento de sistemas (MTEC-N)-158-20250 </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+
+
+
+  </header>
+    <footer class="bg-dark text-white mt-3 py-4 i:hover">
+    <div class="container text-center">
+      <h4 class="mb-3">Criadores do site:</h4>
+
+      <p class="mb-1">Isaque Severo
+        <a href="https://github.com/Isaqueijbjihhh" target="_blank" class="text-white ms-2">
+          <i class="bi bi-github fs-4 "></i>
+        </a>
+      </p>
+       
+      <p class="mb-2">João Lucas 
+         <a href="https://github.com/joaoaura" target="_blank" class="text-white ms-2">
+          <i class="bi bi-github fs-4 "></i>
+        </a>
+      </p>
+
+    
+
+    </div>
+    <div class="text-center mt-3">
+      <small class="text-secondary ">&copy; 2025 Desenvolvimento de Sistemas. Todos os direitos reservados.
+ </small>
+      </div>
+  </footer>
+
+
+
+
+
+
+
+  <script>
+    window.onload = function () {
+      window.scrollTo(0, 0); // Vai para o topo da página
+    };
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>1 serie</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="icon" href="inova.png" type="image/x-icon">
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+
+  <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+  <style>
+      .font {
+      font-family: "Oswald", sans-serif;
+    }
+    
+  footer i:hover {
+      text-shadow: 0px 0px 8px #ffffff;
+    transition: transform 0.4s ease;
+  }
+
+    body {
+      background-color: brown;
+
+      margin-top: 100px;
+    }
+
+    .h1 {
+      margin-left: 20px;
+      color: rgb(0, 0, 0);
+    }
+
+    .topo {
+      margin-top: 10px;
+    }
+
+    .toopo {
+      margin-top: 17px;
+    }
+
+    nav.link {
+      color: black;
+      transition: color 0.5s ease;
+    }
+
+    .nav-link:hover {
+      color: #d5d5d5;
+      background-color: transparent;
+      text-decoration: none;
+    }
+
+    .nav-link.active {
+      background-color: #514f4f;
+      color: #212529;
+      border-radius: 10px;
+    }
+
+    .nav-link.active:hover {
+      background-color: #d5d5d5;
+    }
+
+    .nav-tabs {
+      border-bottom: none;
+
+    }
+
+    .distancia {
+      margin-top: 100px;
+      margin-left: 10px;
+
+    }
+
+
+
+
+
+
+    .carddireito {
+      margin-left: 43.3%;
+      margin-top: 1.4%;
+      height: 0.1px;
+      width: 56%;
+
+
+
+    }
+
+    button {
+      margin-left: 10px;
+    }
+
+    footer {
+      background-color: black;
+      height: auto;
+      width: 100%;
+
+    }
+
+    .roda {
+      align-items: center;
+    }
+
+    .card-scroll {
+      height: 490px;
+      overflow-y: auto;
+    }
+  </style>
+</head>
+
+<body style="background-color: brown;">
+  <script src="js/jquery-1.12.4.min.js"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+
+
+  <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+
+
+
+      <div class="d-flex align-items-center font">
+        <a href="#" class="navbar-brand">
+          <img src="inova.png" width="100px">
+        </a>
+        <h1 class="mb-0 ms-3 me-5 h1">Curso Desenvolvimento de Sistemas</h1>
+      </div>
+      <button class="navbar-toggler ms-auto " type="button" data-bs-toggle="collapse" data-bs-target="#topo">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse font" id="topo">
+        <ul class="navbar-nav flex-row nav-tabs ">
+          <li class="nav-item me-3">
+            <a href="index.html" class="nav-link ">
+              <h3 class="topo"><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
+                  class="bi bi-house" viewBox="0 0 16 16">
+                  <path
+                    d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5z" />
+                </svg></h3>
+            </a>
+          </li>
+          <li class="nav-item me-3">
+            <a href="1serie.html" class="nav-link active shadow-lg" data-bs-toggle="tab">
+              <h3 class="toopo">1 serie</h3>
+            </a>
+          </li>
+          <li class="nav-item me-3">
+            <a href="2serie.html" class="nav-link">
+              <h3 class="toopo">2 serie</h3>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="3serie.html" class="nav-link">
+              <h3 class="toopo">3 serie</h3>
+            </a>
+          </li>
+        </ul>
+       </div>
+       </div>
+       </div>
+        </nav>
+           </div>
+
+
+  </div>
+
+  <header>
+    <div class="distancia">
+
+      <div class="container-fluid">
+        <div class="carddireito">
+
+
+          <div class="row">
+            <div class="accordion" id="courseAccordion">
+              <!--descriçao aps -->
+              <div class="collapse" data-bs-parent="#courseAccordion" id="aps">
+                <div class="col-12">
+
+                  <div class="card">
+                    <div class="card-header bg-primary text-white">
+                      <h1> Aps – Analise e Projetos de sistemas</h1>
+                    </div>
+                    <div class="card-body card-scroll">
+
+
+                      <p>
+                      <h4 class="text-primary"> Resumo: </h4>
+
+                      <p>A disciplina de APS tem como objetivo proporcionar aos alunos a aplicação prática dos
+                        conhecimentos adquiridos nas demais disciplinas do curso técnico, por meio do desenvolvimento de
+                        projetos, atividades e estudos de casos reais. Durante as aulas, alunos aprendem:
+                      <h6>• Planejamento e organização de projetos técnicos, desenvolvendo cronogramas e etapas de
+                        trabalho.</h6>
+                      <h6>• Trabalho em equipe, aprimorando habilidades de comunicação, colaboração e divisão de
+                        tarefas.</h6>
+                      <h6>• Utilização de ferramentas, técnicas e linguagens de programação para implementar soluções
+                        práticas.</h6>
+                      <h6>• Documentação adequada dos projetos, incluindo relatórios, diagramas e apresentações.</h6>
+                      <h6>• Pesquisa e aplicação de novas tecnologias e boas práticas do mercado.</h6>
+                      </p>
+
+                      <h5 class="text-warning">Objetivo geral:</h5>
+                      <p>Capacitar o aluno a integrar teoria e prática, desenvolvendo autonomia, responsabilidade e
+                        capacidade de resolver problemas reais na área de desenvolvimento de sistemas.
+
+                        Projetos típicos da disciplina:
+                        Desenvolvimento de protótipos de sistemas.
+                        Soluções para problemas técnicos específicos.
+                        Estudos de caso aplicados a cenários reais.
+                        Apresentações e relatórios técnicos detalhados.
+                      </p>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+
+
+              <!-- descriçao pw -->
+              <div class="collapse" data-bs-parent="#courseAccordion" id="myCollapsibleContent">
+                <div class="col-12">
+
+                  <div class="card">
+                    <div class="card-header bg-primary text-white">
+                      <h1> PW – Programação Web</h1>
+                    </div>
+                    <div class="card-body ">
+
+                      <p>
+                      <h4 class="text-primary">Resumo:</h4>
+                      <p> A disciplina de PW (Programação Web) tem como objetivo introduzir os alunos ao desenvolvimento
+                        de
+                        sites e aplicações para a web, desde o front-end (parte visual) até conceitos básicos de
+                        back-end.</p>
+
+
+                      <h6>• HTML: linguagem de marcação usada para estruturar o conteúdo da web (textos, formulários,
+                        etc.)</h6>
+                      <h6>• CSS: linguagem de estilo usada para deixar os sites bonitos e responsivos (cores, fontes.).
+                      </h6>
+                      <h6>• JavaScript (JS): linguagem de programação para adicionar interatividade aos sites
+                        (animações,
+                        validação de formulários, etc.)</h6>
+                      <h6>• Bootstrap: framework que facilita a criação de sites modernos com design responsivo (ótimo
+                        celular e desktop).</h6>
+                      <p> Noções básicas de responsividade, design visual, estruturas de navegação, e boas práticas no
+                        desenvolvimento web.
+                        Objetivo geral: Capacitar o aluno a construir páginas web bem estruturadas, com aparência
+                        profissional, acessíveis e adaptáveis a diferentes dispositivos.
+                        Projetos típicos da disciplina:
+                        Landing pages (páginas de apresentação).
+                        Portfólios pessoais.
+                        Mini sistemas de cadastro ou login (parte visual).
+                        Utilização de bibliotecas e componentes visuais prontos.</p>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <div class="collapse" data-bs-parent="#courseAccordion" id="Dd">
+                <div class="col-12">
+
+                  <div class="card">
+                    <div class="card-header bg-primary text-white">
+                      <h2>DD-Design Digital</h2>
+                    </div>
+                    <div class="card-body ">
+
+                      <p>
+                      <h4 class="text-primary">Resumo:</h4>
+                      <p>O Design Digital é fundamental para que os alunos entendam como projetar interfaces funcionais
+                        e visualmente atrativas. Durante as aulas, os alunos aprendem:</p>
+                      <h6>• Fundamentos do design gráfico aplicados à área digital.</h6>
+                      <h6>• Noções de tipografia, cores, contraste e composição visual.</h6>
+                      <h6>• Criação de wireframes e protótipos com ferramentas como Figma, Canva ou Adobe XD.</h6>
+                      <h6>• Princípios de usabilidade e acessibilidade em interfaces digitais.</h6>
+                      <h6>• Técnicas para tornar sistemas mais intuitivos e amigáveis ao usuário.</h6>
+                      <br>
+                      <h4 class="text-warning">Objetivo geral:</h4>
+                      <p>Desenvolver a capacidade de criar interfaces bem estruturadas, que proporcionem uma boa
+                        experiência ao usuário e valorizem os sistemas desenvolvidos.</p>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+
+
+              <div class="collapse" data-bs-parent="#courseAccordion" id="bd">
+                <div class="col-12">
+
+                  <div class="card">
+                    <div class="card-header bg-primary text-white">
+                      <h2>Bd-Banco de dados</h2>
+                    </div>
+                    <div class="card-body ">
+
+                      <h4 class="text-primary">Resumo:</h4>
+                      <p>Essa disciplina ensina como projetar, implementar e gerenciar bancos de dados relacionais.
+                        Durante as aulas, os alunos aprendem:</p>
+                      <h6>• Modelagem de dados (entidade-relacionamento, DER).</h6>
+                      <h6>• Projeto de banco de dados normalizado.</h6>
+                      <h6>• Linguagem SQL (DDL e DML) para manipulação de dados.</h6>
+                      <h6>• Criação de consultas complexas com JOINs, GROUP BY, HAVING.</h6>
+                      <h6>• Administração de banco de dados, backup, restore e permissões.</h6>
+                      <h6>• Introdução a bancos de dados não relacionais (ex: MongoDB).</h6>
+                      <h4 class="text-warning">Objetivo geral:</h4>
+                      <p>Habilitar o aluno a desenvolver sistemas que utilizam bancos de dados para armazenar
+                        informações de forma estruturada, segura e eficiente.</p>
+
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+
+
+
+              <div class="collapse" data-bs-parent="#courseAccordion" id="fd">
+                <div class="col-12">
+
+                  <div class="card">
+                    <div class="card-header bg-primary text-white">
+                      <h2>Fd-Fundamentos da informatica</h2>
+                    </div>
+                    <div class="card-body ">
+
+                      <p>
+                      <h4 class="text-primary">Resumo:</h4>
+                      <p>Disciplina essencial para desenvolver o raciocínio lógico e a base da programação. O aluno
+                        aprende a criar algoritmos eficientes, utilizando estruturas de controle e dados.
+                        Durante as aulas, os alunos aprendem:</p>
+
+
+                      <h6>• Lógica de programação e construção de algoritmos passo a passo.</h6>
+                      <h6>• Estruturas condicionais (if, else, switch) e de repetição (for, while).</h6>
+                      <h6> • Utilização de variáveis, operadores e tipos de dados.</h6>
+                      <h6> • Criação de funções, modularização e reutilização de código.</h6>
+                      <h6> • Estruturas de dados como vetores, matrizes e listas.</h6>
+                      <h6> • Resolução de problemas com raciocínio lógico e otimização.</h6>
+                      <p> Noções básicas de responsividade, design visual, estruturas de navegação, e boas práticas no
+                        desenvolvimento web.
+                      <h4 class="text-warning">Objetivo geral:</h4>
+                      <p>Capacitar o aluno a desenvolver soluções computacionais básicas e intermediárias, utilizando
+                        lógica estruturada e boas práticas de programação.</p>
+                      </p>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+
+
+
+
+              <div class="collapse" data-bs-parent="#courseAccordion" id="tpa">
+                <div class="col-12">
+
+                  <div class="card">
+                    <div class="card-header bg-primary text-white">
+                      <h2>Tpa-Técnicas de Programação e Algoritmos</h2>
+                    </div>
+                    <div class="card-body ">
+
+                      <p>
+                      <h4 class="text-primary">Resumo:</h4>
+                      <p>Disciplina essencial para desenvolver o raciocínio lógico e a base da programação. O aluno
+                        aprende a criar algoritmos eficientes, utilizando estruturas de controle e dados.
+                        Durante as aulas, os alunos aprendem:</p>
+
+
+                      <h6>• Lógica de programação e construção de algoritmos passo a passo.</h6>
+                      <h6>• Estruturas condicionais (if, else, switch) e de repetição (for, while).</h6>
+                      <h6> • Utilização de variáveis, operadores e tipos de dados.</h6>
+                      <h6> • Criação de funções, modularização e reutilização de código.</h6>
+                      <h6> • Estruturas de dados como vetores, matrizes e listas.</h6>
+                      <h6> • Resolução de problemas com raciocínio lógico e otimização.</h6>
+                      <p> Noções básicas de responsividade, design visual, estruturas de navegação, e boas práticas no
+                        desenvolvimento web.
+                      <h4 class="text-warning">Objetivo geral:</h4>
+                      <p>Capacitar o aluno a desenvolver soluções computacionais básicas e intermediárias, utilizando
+                        lógica estruturada e boas práticas de programação.</p>
+                      </p>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+
+      </div>
+
+
+
+      <!-- cards -->
+
+
+      <div class="font">
+        <div class="col-sm-5 mb-2">
+          <div class="card">
+            <button class="btn text-start" type="button" data-bs-toggle="collapse"
+              data-bs-target="#myCollapsibleContent" aria-expanded="false" aria-controls="myCollapsibleContent">
+              <div class="card-border">
+                <div class="card-body">
+                  <div class="cartãoO " estilo="largura¡:: 18rém¡;O ">
+                    <ul class="list-group lista-grupo-flushO">
+                      <li class="lista-grupo-itemO">PW-1A-N-MTEC </li>
+                      <li class="lista-grupo-itemO"> Desenvolvimento de sistemas (MTEC-N)-158-20250 </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+        </button>
+
+
+        <div class="col-sm-5 mb-2">
+
+          <div class="card">
+            <button class="btn text-start" type="button" data-bs-toggle="collapse" data-bs-target="#aps"
+              aria-expanded="false" aria-controls="myCollapsibleContent">
+              <div class="card-border">
+                <div class="card-body">
+                  <div class="cartãoO " estilo="largura¡:: 18rém¡;O ">
+                    <ul class="list-group lista-grupo-flushO">
+                      <li class="lista-grupo-itemO">APS-1A-N-MTEC</li>
+                      <li class="lista-grupo-itemO"> Desenvolvimento de sistemas (MTEC-N)-158-20250 </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+          </div>
+
+        </div>
+        </button>
+
+
+
+
+
+
+
+
+        <div class="col-sm-5 mb-2">
+
+          <div class="card">
+            <button class="btn text-start" type="button" data-bs-toggle="collapse" data-bs-target="#tpa"
+              aria-expanded="false" aria-controls="myCollapsibleContent">
+              <div class="card-border">
+                <div class="card-body">
+                  <div class="cartãoO " estilo="largura¡:: 18rém¡;O ">
+                    <ul class="list-group lista-grupo-flushO">
+                      <li class="lista-grupo-itemO">TPA-N-MTEC</li>
+                      <li class="lista-grupo-itemO"> Desenvolvimento de sistemas (MTEC-N)-158-20250 </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+          </div>
+
+        </div>
+        </button>
+
+
+
+        <div class="col-sm-5 mb-2">
+          <div class="card">
+            <button class="btn text-start" type="button" data-bs-toggle="collapse" data-bs-target="#Dd"
+              aria-expanded="false" aria-controls="myCollapsibleContent">
+              <div class="card-border">
+                <div class="card-body">
+                  <div class="cartãoO " estilo="largura¡:: 18rém¡;O ">
+                    <ul class="list-group start lista-grupo-flushO">
+                      <li class="lista-grupo-itemO">DD-1A-N-MTEC</li>
+                      <li class="lista-grupo-itemO"> Desenvolvimento de sistemas (MTEC-N)-158-20250 </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+
+
+        <div class="col-sm-5 mb-2">
+          <div class="card">
+            <button class="btn text-start" type="button" data-bs-toggle="collapse" data-bs-target="#bd"
+              aria-expanded="false" aria-controls="myCollapsibleContent">
+              <div class="card-border">
+                <div class="card-body">
+
+                  <div class="cartãoO " estilo="largura¡:: 18rém¡;O ">
+                    <ul class="list-group lista-grupo-flushO">
+                      <li class="lista-grupo-itemO">BD-1A-N-MTEC</li>
+                      <li class="lista-grupo-itemO"> Desenvolvimento de sistemas (MTEC-N)-158-20250 </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+
+
+        <div class="col-sm-5 mb-2">
+          <div class="card">
+            <button class="btn text-start" type="button" data-bs-toggle="collapse" data-bs-target="#fd"
+              aria-expanded="false" aria-controls="myCollapsibleContent">
+              <div class="card-border">
+                <div class="card-body">
+                  <div class="cartãoO " estilo="largura¡:: 18rém¡;O ">
+                    <ul class="list-group lista-grupo-flush">
+                      <li class="lista-grupo-itemO">FD-1A-N-MTEC</li>
+                      <li class="lista-grupo-itemO"> Desenvolvimento de sistemas (MTEC-N)-158-20250 </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+          </div>
+        </div>
+
+
+
+  </header>
+
+
+  <footer class=" bg-dark text-center text-white py-4 mt-5">
+  <div class="container">
+    <h4 class="mb-2">Criadores do site:</h4>
+    <p>
+      Isaque Severo
+      <a href="https://github.com/Isaqueijbjihhh" target="_blank" class="text-white ms-2">
+        <i class="bi bi-github fs-4"></i>
+      </a>
+    </p>
+    <p>
+      João Lucas
+      <a href="https://github.com/joaoaura" target="_blank" class="text-white ms-2">
+        <i class="bi bi-github fs-4"></i>
+      </a>
+    </p>
+    <small class="text-secondary d-block mt-3">&copy; 2025 Desenvolvimento de Sistemas. Todos os direitos reservados.</small>
+  </div>
+</footer>
+  
+
+
+
+
+
+  <script>
+    window.onload = function () {
+      window.scrollTo(0, 0); // Vai para o topo da página
+    };
+  </script>
+
+</body>
+
+</html>

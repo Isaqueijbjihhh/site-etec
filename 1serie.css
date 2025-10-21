@@ -1,0 +1,71 @@
+   body {
+      background-color: brown;
+      font-family: "Oswald", sans-serif;
+      margin-top: 100px;
+    }
+
+    .h1 {
+      margin-left: 20px;
+      color: rgb(0, 0, 0);
+    }
+
+    .topo {
+      margin-top: 10px;
+    }
+
+    .toopo {
+      margin-top: 17px;
+    }
+
+    nav.link {
+      color: black;
+      transition: color 0.5s ease;
+    }
+
+    .nav-link:hover {
+      color: #d5d5d5;
+      background-color: transparent;
+      text-decoration: none;
+    }
+
+    .nav-link.active {
+      background-color: #514f4f;
+      color: #212529;
+      border-radius: 10px;
+    }
+
+    .nav-link.active:hover {
+      background-color: #d5d5d5;
+    }
+    .nav-tabs{
+      border-bottom: none;
+      
+    }
+    .distancia{
+      margin-top:10px;
+      margin-left:20px;
+    }
+    .modal{ 
+
+       position: fixed;
+      margin-left: 18%;
+      margin-top: 5%;
+   
+      
+    
+
+    }
+      .modal-personalizado{
+        min-width: 50%; 
+    
+        
+    min-height: 80%;
+    max-height: 90%; 
+  }
+
+  .modal-body {
+    overflow-y: auto; /* Adiciona barra de rolagem, caso o conteúdo ultrapasse a altura do modal */
+  }
+  
+
+    
